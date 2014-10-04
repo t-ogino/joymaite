@@ -1,0 +1,260 @@
+1:
+  id:             1
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に10年間勤務したとき
+  condition_year: 10
+  amount:         5,000円
+  year_flg:       1
+2:
+  id:             2
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に15年間勤務したとき
+  condition_year: 15
+  amount:         5,000円
+  year_flg:       1
+3:
+  id:             3
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に20年間勤務したとき
+  condition_year: 20
+  amount:         10,000円
+  year_flg:       1
+4:
+  id:             4
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に25年間勤務したとき
+  condition_year: 25
+  amount:         5,000円
+  year_flg:       1
+5:
+  id:             5
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に30年間勤務したとき
+  condition_year: 30
+  amount:         10,000円
+  year_flg:       1
+6:
+  id:             6
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に35年間勤務したとき
+  condition_year: 35
+  amount:         5,000円
+  year_flg:       1
+7:
+  id:             7
+  gift_div:       1
+  condition:      永年勤続報奨金　会員が同一事業所に40年間勤務したとき
+  condition_year: 40
+  amount:         10,000円
+  year_flg:       1
+8:
+  id:             8
+  gift_div:       2
+  condition:      結婚祝金　会員が結婚したとき
+  condition_year: 0
+  amount:         20,000円
+  year_flg:       0
+9:
+  id:             9
+  gift_div:       2
+  condition:      結婚祝金　水晶婚：会員が結婚して15年に達したとき
+  condition_year: 15
+  amount:         5,000円
+  year_flg:       1
+10:
+  id:             10
+  gift_div:       2
+  condition:      結婚祝金　銀婚：会員が結婚して25年に達したとき
+  condition_year: 25
+  amount:         10,000円
+  year_flg:       1
+11:
+  id:             11
+  gift_div:       3
+  condition:      出産祝金　会員又は会員の配偶者が出産したとき
+  condition_year: 0
+  amount:         10,000円
+  year_flg:       0
+12:
+  id:             12
+  gift_div:       4
+  condition:      入学祝金　会員の子が小学校、中学校に入学したとき
+  condition_year: 0
+  amount:         10,000円
+  year_flg:       0
+13:
+  id:             13
+  gift_div:       5
+  condition:      成人祝金　会員が満20歳に達したとき
+  condition_year: 20
+  amount:         10,000円
+  year_flg:       1
+14:
+  id:             14
+  gift_div:       6
+  condition:      還暦祝金　会員が満60歳に達したとき
+  condition_year: 60
+  amount:         10,000円
+  year_flg:       1
+15:
+  id:             15
+  gift_div:       7
+  condition:      古希祝金　会員が満70歳に達したとき
+  condition_year: 70
+  amount:         10,000円
+  year_flg:       1
+16:
+  id:             16
+  gift_div:       8
+  condition:      傷病見舞金　14日以上～30日未満の休業の場合
+  condition_year: 0
+  amount:         5,000円
+  year_flg:       0
+17:
+  id:             17
+  gift_div:       8
+  condition:      傷病見舞金　30日以上～60日未満の休業の場合
+  condition_year: 0
+  amount:         10,000円
+  year_flg:       0
+18:
+  id:             18
+  gift_div:       8
+  condition:      傷病見舞金　60日以上～90日未満の休業の場合
+  condition_year: 0
+  amount:         15,000円
+  year_flg:       0
+19:
+  id:             19
+  gift_div:       8
+  condition:      傷病見舞金　90日以上～120日未満の休業の場合
+  condition_year: 0
+  amount:         20,000円
+  year_flg:       0
+20:
+  id:             20
+  gift_div:       8
+  condition:      傷病見舞金　20日以上の休業の場合
+  condition_year: 0
+  amount:         25,000円
+  year_flg:       0
+21:
+  id:             21
+  gift_div:       9
+  condition:      障害見舞金　会員の不慮の事故等により障害者になったとき（１級～14級）
+  condition_year: 0
+  amount:         2,000円～150,000円
+  year_flg:       0
+22:
+  id:             22
+  gift_div:       9
+  condition:      障害見舞金　会員の交通事故等により障害者になったとき（１級～14級）
+  condition_year: 0
+  amount:         6,000円 ～250,000円
+  year_flg:       0
+23:
+  id:             23
+  gift_div:       10
+  condition:      災害見舞金　火災等　全焼（70％以上）
+  condition_year: 0
+  amount:         500,000円
+  year_flg:       0
+24:
+  id:             24
+  gift_div:       10
+  condition:      災害見舞金　火災等　半焼（20～70％未満）
+  condition_year: 0
+  amount:         250,000円～450,000円
+  year_flg:       0
+25:
+  id:             25
+  gift_div:       10
+  condition:      災害見舞金　火災等　一部焼（20％未満）
+  condition_year: 0
+  amount:         150,000円以内
+  year_flg:       0
+26:
+  id:             26
+  gift_div:       10
+  condition:      災害見舞金　火災等　同居親族の死亡
+  condition_year: 0
+  amount:         10,000円
+  year_flg:       0
+27:
+  id:             27
+  gift_div:       10
+  condition:      災害見舞金　自然災害　全壊・流失（70％以上）
+  condition_year: 0
+  amount:         150,000円
+  year_flg:       0
+28:
+  id:             28
+  gift_div:       10
+  condition:      災害見舞金　自然災害　半壊（20～70％未満）
+  condition_year: 0
+  amount:         75,000円
+  year_flg:       0
+29:
+  id:             29
+  gift_div:       10
+  condition:      災害見舞金　自然災害　一部壊
+  condition_year: 0
+  amount:         5,000円～15,000円
+  year_flg:       0
+30:
+  id:             30
+  gift_div:       10
+  condition:      災害見舞金　自然災害　床上浸水
+  condition_year: 0
+  amount:         5,000円～75,000円
+  year_flg:       0
+31:
+  id:             31
+  gift_div:       10
+  condition:      災害見舞金　自然災害　同居親族の死亡
+  condition_year: 0
+  amount:         10,000円
+  year_flg:       0
+32:
+  id:             32
+  gift_div:       11
+  condition:      死亡弔慰金　会員（本人）疾病による死亡  71歳未満
+  condition_year: 0
+  amount:         100,000円
+  year_flg:       0
+33:
+  id:             33
+  gift_div:       11
+  condition:      死亡弔慰金　会員（本人）（重度障害含む）上記以外の方
+  condition_year: 0
+  amount:         50,000円
+  year_flg:       0
+34:
+  id:             34
+  gift_div:       11
+  condition:      死亡弔慰金　会員（本人）不慮の事故死亡
+  condition_year: 0
+  amount:        150,000円
+  year_flg:       0
+35:
+  id:             35
+  gift_div:       11
+  condition:      死亡弔慰金　会員（本人）交通事故死亡
+  condition_year: 0
+  amount:         250,000円
+  year_flg:       0
+36:
+  id:             36
+  gift_div:       11
+  condition:      死亡弔慰金　会員の配偶者が死亡した場合
+  condition_year: 0
+  amount:          50,000円
+  year_flg:       0
+37:
+  id:             37
+  gift_div:       11
+  condition:      死亡弔慰金　会員の子供が死亡した場合
+  condition_year: 0
+  amount:         20,000円
+  year_flg:       0
+

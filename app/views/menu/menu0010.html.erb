@@ -1,0 +1,139 @@
+<!--
+/**
+ * タイトル: メニュー画面
+ * 説明    : メニューを表示します 
+ */
+-->
+<!-- スクリプト -->
+<%= content_for :head do %> 
+  <script language="Javascript">
+/*
+ * 終了ボタン
+ */
+  function end() {
+    if (window.confirm('システムを終了しますがよろしいですか？')){
+      var url = "<%= url_for :controller => "menu", :action => "menu0002" %>";
+      document.form1.action = url;
+      document.form1.submit();
+    }
+  }
+  </script>
+<% end %>
+<div id="cntl">
+
+<div style="top:5px;left:0px;position:absolute">
+<table border="0" width="800px">
+    <tr>
+        <td class="title">メニュー</td>
+    </tr>
+</table>
+  <P><INPUT class="GamenCD" disabled readonly value="MENU" id="GamenCD" name="GamenCD" tabindex="-1"></P>
+</div>
+
+<div style="top:35px;left:30px;position:absolute">
+
+<%= form_tag nil, :name => 'form1' do %>
+
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><b><font color="blue">ＪＯＹＭＡＩＴＥ</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'member_msts',:action=>'index') %>">会員一覧</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'gift_masters',:action=>'index') %>">慶弔給付金一覧</a>
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="font70"><hr></td>
+      </tr>
+    </tbody>
+    </table>
+
+
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><b><font color="blue">マスタメンテ</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'name_msts',:action=>'index') %>">名称マスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'messages',:action=>'index') %>">メッセージマスタ</a>
+        </td>
+        <td align="left" valign="top">
+        </td>
+        <td align="left" valign="top">
+        </td>
+        <td align="left">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="font70"><hr></td>
+      </tr>
+    </tbody>
+    </table>
+
+</div>
+<div style="top:610px;left:20px;position:absolute">
+<table border="0" width="800px">
+  <tr>
+    <td align="left">
+      <hr/>
+        <input style="WIDTH: 100px; HEIGHT: 25px" type="button" value="終　了" name="End" onClick="end()">
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<% end %>
+
+</div>

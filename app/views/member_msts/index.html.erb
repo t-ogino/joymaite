@@ -1,0 +1,159 @@
+<!-- スクリプト -->
+<%= content_for :head do %> 
+  <script language="Javascript">
+  /*
+   * 終了ボタン
+   */
+  function btnEndClicked(){
+      $("#menu_form").attr("action","<%= url_for :controller => 'menu', :action =>'menu0010' %>");
+      $("#menu_form").submit();
+  }
+  /*
+   * 新規作成ボタン
+   */
+  function btnNewClicked(){
+      $("#menu_form").attr("action","<%= url_for :action =>'new' %>");
+      $("#menu_form").submit();
+  }
+  /*
+   * 表示ボタン
+   */
+  function btnShowClicked(id){
+      $("#menu_form").attr("action","<%= url_for :action =>'show' %>" + "?id=" + id);
+      $("#menu_form").submit();
+  }
+  /*
+   * 編集ボタン
+   */
+  function btnEditClicked(id){
+      $("#menu_form").attr("action","<%= url_for :action =>'edit' %>" + "?id=" + id);
+      $("#menu_form").submit();
+  }
+  /*
+   * 削除ボタン
+   */
+  function btnDelClicked(id){
+    if (window.confirm('削除しますがよろしいですか？')){
+      $("#menu_form").attr("action","<%= url_for :action =>'destroy' %>" + "?id=" + id);
+      $("#menu_form").submit();
+    }
+  }
+
+  /*
+   * 一覧作成ボタン
+   */
+  function btnListClicked(){
+      $("#menu_form").attr("action","<%= url_for :action =>'list' %>");
+      $("#menu_form").submit();
+  }
+
+  /*
+   * 起動時の処理
+   */
+  function onLoad(){
+      /* エラーメッセージがあれば表示する  */
+      var msg = "<%=  flash[:notice] %>";
+      if  (msg.length != 0){
+        alert(msg);
+        <%=  flash[:notice] = ""%>
+      }
+    /* 最初のフォーカス */
+    //document.getElementById('syoninNo').focus();
+  }
+
+  </script>
+<% end %>
+
+<% content_for :assets do %>
+<%= javascript_include_tag "name_msts/index" %>
+<% end %>
+
+<!-- 表題 -->
+<div style="top:5px;left:0px;position:absolute">
+<table border="0" width="970px">
+    <tr>
+        <td class="title"><%= label :member_mst, :table_name  %></td>
+    </tr>
+</table>
+  <P><INPUT class="GamenCD" disabled readonly value="member_msts" name="GamenCD" tabindex=-1 ></P>
+ </div>
+
+<!-- 表見出し  -->
+<div style="top:70px; left:10px;position:absolute">
+<table border=0 cellspacing=1 cellpadding=4 class="tbl_bgcolor_90" id="data_list">
+  <colgroup>
+    <col width="100px">
+    <col width="100px">
+    <col width="100px">
+    <col width="100px">
+    <col width="100px">
+    <col width="20px">
+    <col width="100px">
+    <col width="100px">
+    <col width="20px">
+    <col width="40px">
+    <col width="40px">
+    <col width="40px">
+  </colgroup>
+  <tr>
+    <td class="tbl_title"><%= label :member_mst, :menber_no %></td>
+    <td class="tbl_title"><%= label :member_mst, :menber_name %></td>
+    <td class="tbl_title"><%= label :member_mst, :birth_date %></td>
+    <td class="tbl_title"><%= label :member_mst, :enter_date %></td>
+    <td class="tbl_title">次回取得日</td>
+    <td class="tbl_title"></td>
+    <td class="tbl_title"><%= label :member_mst, :marry_date %></td>
+    <td class="tbl_title">次回取得日</td>
+    <td class="tbl_title"></td>
+    <td class="tbl_title"></td>
+    <td class="tbl_title"></td>
+    <td class="tbl_title"></td>
+  </tr>
+
+<!-- 表本体  -->
+<% cnt = 0 %>
+<% @member_msts.each do |member_mst| %>
+<% cnt = cnt + 1 %>
+  <tr data-row-id="<%= cnt %>">
+    <td class="<%= get_td_class(cnt) %>"><%= member_mst.menber_no %></td>
+    <td class="<%= get_td_class(cnt) %>"><%= member_mst.menber_name %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= member_mst.birth_date %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= member_mst.enter_date %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= get_gift_kinzoku_next(member_mst.enter_date)[0] %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= get_gift_kinzoku_mark(get_nen(member_mst.enter_date)) %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= member_mst.marry_date %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= get_gift_marry_next(member_mst.marry_date)[0] %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><%= get_gift_marry_mark(get_nen(member_mst.marry_date)) %></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><span onclick="btnShowClicked('<%= member_mst.id %>');" class="link">表示</span></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><span onclick="btnEditClicked('<%= member_mst.id %>');" class="link">編集</span></td>
+    <td class="<%= get_td_class(cnt) %>" align="center"><span onclick="btnDelClicked('<%= member_mst.id %>');"  class="link">削除</span></td>
+
+
+  </tr>
+<% end %>
+</table>
+<!--ページネート-->
+<%= will_paginate(@member_msts,:previous_label => '前へ', :next_label => '次へ') %>
+
+</div>
+
+<!-- ボタン領域 -->
+<div style="top:610px;left:10px;position:absolute">
+  <hr width="970px">
+  <span class="font90">
+<table border="0" width="970px">
+<tr>
+<td>
+</td>
+<td align=right>
+    <input type="button"  value="新規作成へ"   onclick="btnNewClicked();"  class="sub_button">
+    <input type="button"  value="メニューへ"   onclick="btnEndClicked();"  class="sub_button">
+</td>
+</tr>
+</table>
+  </span>
+</div>
+<!--メニュー遷移用 -->
+<%= form_tag({:controller => 'menu', :action =>'menu0010'},{ :name=> :menu_form , :id=> :menu_form }) do %>
+<% end %>
+

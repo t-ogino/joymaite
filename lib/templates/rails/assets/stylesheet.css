@@ -1,0 +1,158 @@
+BODY.Body {  
+    /*BACKGROUND: #ffffff;*/
+    /*BACKGROUND: #dfdddd;*/
+    /*BACKGROUND: #dfffdf;*/
+    BACKGROUND: #dfdfff;
+}
+
+/* 画面番号 */
+INPUT.GamenCD {
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    /*BACKGROUND: #ffffff;*/
+    /*BACKGROUND: #dfdddd;*/
+    BACKGROUND: #dfdfff;
+    WIDTH: 70px;
+    HEIGHT: 15px;
+    POSITION: absolute; top:1%; left:90%;
+}
+
+/* 画面表題 */
+.title{
+    font-size: 17px;
+    font-weight: bold;
+    /*color: #669966;*/
+    color: #2e82c1;
+    text-align: center;
+    /*border-bottom: 3px solid #669966;*/
+    border-bottom: 3px solid #2e82c1;
+    padding-left: 10px;
+}
+
+/* 文字サイズ */
+.font95 {
+    font-size: 95%;
+}
+.font90 {
+    font-size: 90%;
+}
+.font80 {
+    font-size: 80%;
+}
+.font70 {
+    font-size: 70%;
+}
+
+/** テーブルタイトル */
+.tbl_title{
+    text-align: center;
+    color: #ffffff;
+    /*background-color: #669966;*/
+    background-color: #2e82c1;
+}
+.tbl_title_90{
+    font-size: 90%;
+    text-align: center;
+    color: #ffffff;
+    /*background-color: #669966;*/
+    background-color: #2e82c1;
+}
+.tbl_title_80{
+    font-size: 80%;
+    text-align: center;
+    color: #ffffff;
+    /*background-color: #669966;*/
+    background-color: #2e82c1;
+}
+.tbl_title_70{
+    font-size: 70%;
+    text-align: center;
+    color: #ffffff;
+    /*background-color: #669966;*/
+    background-color: #2e82c1;
+}
+
+/** テーブルサブタイトル */
+.tbl_sub_title{
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+.tbl_sub_title_90{
+    font-size: 90%;
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+.tbl_sub_title_80{
+    font-size: 80%;
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+.tbl_sub_title_70{
+    font-size: 70%;
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+
+/** テーブルデータ */
+.tbl_data{
+    background-color: #ffffff;
+}
+.tbl_data_90{
+    font-size: 90%;
+    background-color: #ffffff;
+}
+.tbl_data_80{
+    font-size: 80%;
+    background-color: #ffffff;
+}
+.tbl_data_70{
+    font-size: 70%;
+    background-color: #ffffff;
+}
+
+/** テーブル枠線 */
+.tbl_bgcolor{
+    background-color: #000000;
+}
+.tbl_bgcolor_90{
+    background-color: #000000;
+    font-size: 90%;
+}
+.tbl_bgcolor_80{
+    background-color: #000000;
+    font-size: 80%;
+}
+.tbl_bgcolor_70{
+    background-color: #000000;
+    font-size: 70%;
+}
+/** ページネート */
+div.pagination {
+   font-size: 90%;
+   text-align: left;
+    padding:    5px;
+}
+div.pagination a{
+   font-size: 90%;
+    background-color: #2e82c1;
+    color: #ffffff;
+    padding: 5px;
+}
+div.pagination em{
+   font-size: 90%;
+    background-color: #ccc;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px;
+}
+div.pagination span.disabled{
+   font-size: 90%;
+    background-color: #ccc;
+    padding: 5px;
+}

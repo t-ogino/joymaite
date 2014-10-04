@@ -1,0 +1,88 @@
+<!-- スクリプト -->
+<%= content_for :head do %> 
+  <script language="Javascript">
+  /*
+   * 終了ボタン
+   */
+  function btnEndClicked(){
+      var frmSend = document.getElementById("menu_form");
+      frmSend.action="<%= url_for :controller => 'menu', :action =>'menu0010' %>";
+      frmSend.submit();
+  }
+  /*
+   * 戻るボタン
+   */
+  function btnBackClicked(){
+      var frmSend = document.getElementById("menu_form");
+      frmSend.action="<%= url_for :action =>'index' %>";
+      frmSend.submit();
+  }
+
+  /*
+   * 起動時の処理
+   */
+  function onLoad(){
+      /* エラーメッセージがあれば表示する  */
+      var msg = "<%=  flash[:notice] %>";
+      if  (msg.length != 0){
+        alert(msg);
+        <%=  flash[:notice] = ""%>
+      }
+    /* 最初のフォーカス */
+    //document.getElementById('syoninNo').focus();
+  }
+  </script>
+<% end %>
+
+<!-- エラーメッセージ領域  -->
+<div style="top:40px; left:10px;position:absolute">
+    <% if @login.errors.any? %>
+        <font color="red"><b> 入力エラー　：　</b></font><%= @login.errors.full_messages[0]%>
+    <% end %>
+</div>
+
+<!-- 表見出し  -->
+<div style="top:70px; left:10px;position:absolute">
+<% @login.id.nil? ? @action='create' : @action='update' %>
+<%= form_for @login ,:url=>{:action => @action}  do |f| %>
+  <input type="hidden" id="id" name="id" value="<%= @login.id  %>">
+  <table border=0 cellspacing=1 cellpadding=4 class="tbl_bgcolor_90">
+    <colgroup>
+      <col width="150px">
+      <col  width="300px">
+    </colgroup>
+      <tr>
+      <td class="tbl_title"><%= f.label :user_id %></td>
+      <td class="tbl_data" ><%= f.text_field :user_id %></td>
+    </tr>
+      <tr>
+      <td class="tbl_title"><%= f.label :password %></td>
+      <td class="tbl_data" ><%= f.text_field :password %></td>
+    </tr>
+      <tr>
+      <td class="tbl_title"><%= f.label :staff_no %></td>
+      <td class="tbl_data" ><%= f.text_field :staff_no %></td>
+    </tr>
+    </table>
+</div>
+
+<!-- ボタン領域 -->
+<div style="top:620px;left:10px;position:absolute">
+  <div class="actions">
+    <hr width="970px">
+<table border="0" width="970px">
+<tr>
+<td>
+    <%= f.submit '　登　録　' ,:class => "sub_button"  %>
+</td>
+<td align=right>
+    <input type="button"  value="戻　る"         onclick="btnBackClicked();"   class="sub_button">
+    <input type="button"  value="メニューへ"     onclick="btnEndClicked();"    class="sub_button">
+</td>
+</tr>
+</table>
+</div>
+<% end %>
+<!--メニュー遷移用 -->
+<%= form_tag({:controller => 'menu', :action =>'menu0010'},{ :name=> :menu_form , :id=> :menu_form }) do %>
+<% end %>

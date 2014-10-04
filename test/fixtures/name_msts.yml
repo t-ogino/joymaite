@@ -1,0 +1,1300 @@
+DATA1:  
+    id:             1
+    code_id:        '001'
+    code_id_name:   相手科目    
+    code:           1
+    name:           普通預金  
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA2:  
+    id:             2   
+    code_id:        '001'
+    code_id_name:   相手科目    
+    code:           2   
+    name:           定期預金
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA3:  
+    id:             3   
+    code_id:        '001'
+    code_id_name:   相手科目    
+    code:           3   
+    name:           現金
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA4:  
+    id:             4   
+    code_id:        '001'
+    code_id_name:   相手科目    
+    code:           4   
+    name:           カード（ＪＣＢ）
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA5:  
+    id:             5   
+    code_id:        '001'
+    code_id_name:   相手科目    
+    code:           5   
+    name:           カード（ＪＡＬ）
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA6:  
+    id:             6   
+    code_id:        '001'
+    code_id_name:   相手科目    
+    code:           6   
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA7:  
+    id:             7   
+    code_id:        '002'   
+    code_id_name:   有無区分    
+    code:           0   
+    name:           無  
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA8:  
+    id:             8   
+    code_id:        '002'   
+    code_id_name:   有無区分    
+    code:           1
+    name:           有  
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA9:  
+    id:             9   
+    code_id:        '003'   
+    code_id_name:   資格区分    
+    code:           1
+    name:           情報処理
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA10: 
+    id:             10  
+    code_id:        '003'   
+    code_id_name:   資格区分
+    code:           2   
+    name:           ベンダー
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA11: 
+    id:             11  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           0
+    name:           一般社員 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA12: 
+    id:             12  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           1
+    name:           主任3級 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA13: 
+    id:             13  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           2
+    name:           主任2級 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA14: 
+    id:             14  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           3
+    name:           主任1級 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA15: 
+    id:             15  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           4
+    name:           課長 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA16: 
+    id:             16  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           5
+    name:           部長 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA17: 
+    id:             17  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           6
+    name:           社長
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA18: 
+    id:             18  
+    code_id:        '005'   
+    code_id_name:   休職区分
+    code:           0
+    name:           初期値 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA19: 
+    id:             19  
+    code_id:        '005'   
+    code_id_name:   休職区分
+    code:           1
+    name:           休職 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA20: 
+    id:             20  
+    code_id:        '005'   
+    code_id_name:   休職区分
+    code:           9
+    name:           退職
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA21: 
+    id:             21  
+    code_id:        '006'   
+    code_id_name:   講習会分類
+    code:           1
+    name:           言語 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA22: 
+    id:             22  
+    code_id:        '006'   
+    code_id_name:   講習会分類
+    code:           2
+    name:           ＯＳ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA23: 
+    id:             23  
+    code_id:        '006'   
+    code_id_name:   講習会分類
+    code:           3
+    name:           データベース
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA24: 
+    id:             24  
+    code_id:        '006'   
+    code_id_name:   講習会分類
+    code:           4
+    name:           ネットワーク
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA25: 
+    id:             25  
+    code_id:        '006'   
+    code_id_name:   講習会分類
+    code:           5
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA26: 
+    id:             26  
+    code_id:        '007'   
+    code_id_name:   難易度
+    code:           0
+    name:           未入力 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA27: 
+    id:             27  
+    code_id:        '007'   
+    code_id_name:   難易度
+    code:           1
+    name:           大変簡単 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA28: 
+    id:             28  
+    code_id:        '007'   
+    code_id_name:   難易度
+    code:           2
+    name:           簡単 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA29: 
+    id:             29  
+    code_id:        '007'   
+    code_id_name:   難易度
+    code:           3
+    name:           普通 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA30: 
+    id:             30  
+    code_id:        '007'   
+    code_id_name:   難易度
+    code:           4
+    name:           難しい 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA31: 
+    id:             31  
+    code_id:        '007'   
+    code_id_name:   難易度
+    code:           5
+    name:           大変難しい
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA32: 
+    id:             32  
+    code_id:        '008'   
+    code_id_name:   有用性
+    code:           0
+    name:           未入力 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA33: 
+    id:             33  
+    code_id:        '008'   
+    code_id_name:   有用性
+    code:           1
+    name:           役に立たない 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA34: 
+    id:             34  
+    code_id:        '008'   
+    code_id_name:   有用性
+    code:           2
+    name:           あまり役に立たない 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA35: 
+    id:             35  
+    code_id:        '008'   
+    code_id_name:   有用性
+    code:           3
+    name:           普通 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA36: 
+    id:             36  
+    code_id:        '008'   
+    code_id_name:   有用性
+    code:           4
+    name:           役に立つ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA37: 
+    id:             37  
+    code_id:        '008'   
+    code_id_name:   有用性
+    code:           5
+    name:           大変役に立つ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA38: 
+    id:             38  
+    code_id:        '009'   
+    code_id_name:   保存状態
+    code:           0
+    name:           初期値 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA39: 
+    id:             39  
+    code_id:        '009'   
+    code_id_name:   保存状態
+    code:           1
+    name:           一時保存 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA40: 
+    id:             40  
+    code_id:        '009'   
+    code_id_name:   保存状態
+    code:           2
+    name:           完了 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA41: 
+    id:             41  
+    code_id:        '009'   
+    code_id_name:   保存状態
+    code:           9
+    name:           欠席
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA42: 
+    id:             42  
+    code_id:        '010'   
+    code_id_name:   ＯＳ
+    code:           1
+    name:           汎用機 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA43: 
+    id:             43  
+    code_id:        '010'   
+    code_id_name:   ＯＳ
+    code:           2
+    name:           ＵＮＩＸ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA44: 
+    id:             44  
+    code_id:        '010'   
+    code_id_name:   ＯＳ
+    code:           3
+    name:           ＷＩＮ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA45: 
+    id:             45  
+    code_id:        '010'   
+    code_id_name:   ＯＳ
+    code:           4
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA46: 
+    id:             46  
+    code_id:        '011'   
+    code_id_name:   言語
+    code:           1
+    name:           ＣＯＢＯＬ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA47: 
+    id:             47  
+    code_id:        '011'   
+    code_id_name:   言語
+    code:           2
+    name:           ＶＢ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA48: 
+    id:             48  
+    code_id:        '011'   
+    code_id_name:   言語
+    code:           3
+    name:           Ｃ言語 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA49: 
+    id:             49  
+    code_id:        '011'   
+    code_id_name:   言語
+    code:           4
+    name:           Ｊａｖａ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA50: 
+    id:             50  
+    code_id:        '011'   
+    code_id_name:   言語
+    code:           5
+    name:           Ｒｕｂｙ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA51: 
+    id:             51  
+    code_id:        '011'   
+    code_id_name:   言語
+    code:           9
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA52: 
+    id:             52  
+    code_id:        '012'   
+    code_id_name:   オンバッチ区分
+    code:           1
+    name:           オンライン 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA53: 
+    id:             53  
+    code_id:        '012'   
+    code_id_name:   オンバッチ区分
+    code:           2
+    name:           バッチ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA54: 
+    id:             54  
+    code_id:        '012'   
+    code_id_name:   オンバッチ区分
+    code:           3
+    name:           オンバッチ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA55: 
+    id:             55  
+    code_id:        '012'   
+    code_id_name:   オンバッチ区分
+    code:           4
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA56: 
+    id:             56  
+    code_id:        '013'   
+    code_id_name:   データベース
+    code:           1
+    name:           ＮＤＢ 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA57: 
+    id:             57  
+    code_id:        '013'   
+    code_id_name:   データベース
+    code:           2
+    name:           Ｏｒａｃｌｅ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA58: 
+    id:             58  
+    code_id:        '013'   
+    code_id_name:   データベース
+    code:           3
+    name:           Ｓｙｍｆｏｒｅ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA59: 
+    id:             59  
+    code_id:        '013'   
+    code_id_name:   データベース
+    code:           4
+    name:           ＭｙＳＱＬ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA60: 
+    id:             60  
+    code_id:        '013'   
+    code_id_name:   データベース
+    code:           5
+    name:           ＰＯＳＴＧＲＥＳ
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA61: 
+    id:             61  
+    code_id:        '013'   
+    code_id_name:   データベース
+    code:           9
+    name:           その他 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA62: 
+    id:             62  
+    code_id:        '014'   
+    code_id_name:   課税区分
+    code:           0
+    name:           不課税、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA63: 
+    id:             63  
+    code_id:        '014'   
+    code_id_name:   課税区分
+    code:           1
+    name:           課税、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA64: 
+    id:             64  
+    code_id:        '014'   
+    code_id_name:   課税区分
+    code:           2
+    name:           免税、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA65: 
+    id:             65  
+    code_id:        '014'   
+    code_id_name:   課税区分
+    code:           3
+    name:           非課税
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA66: 
+    id:             66  
+    code_id:        '015'   
+    code_id_name:   借方登録区分    
+    code:           1
+    name:           借方登録可能、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA67: 
+    id:             67  
+    code_id:        '015'   
+    code_id_name:   借方登録区分    
+    code:           0
+    name:           借方登録不可
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA68: 
+    id:             68  
+    code_id:        '016'   
+    code_id_name:   貸方登録区分    
+    code:           1
+    name:           貸方登録可能、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA69: 
+    id:             69  
+    code_id:        '016'   
+    code_id_name:   貸方登録区分    
+    code:           0
+    name:           貸方登録不可
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA70: 
+    id:             70  
+    code_id:        '017'   
+    code_id_name:   借方貸方区分    
+    code:           1
+    name:           借方、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA71: 
+    id:             71  
+    code_id:        '017'   
+    code_id_name:   借方貸方区分    
+    code:           2
+    name:           貸方
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA72: 
+    id:             72  
+    code_id:        '018'   
+    code_id_name:   勤務形態    
+    code:           1
+    name:           通常勤務 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA73: 
+    id:             73  
+    code_id:        '018'   
+    code_id_name:   勤務形態    
+    code:           2
+    name:           シフト勤務 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA74: 
+    id:             74  
+    code_id:        '018'   
+    code_id_name:   勤務形態    
+    code:           3
+    name:           遅刻 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA75: 
+    id:             75  
+    code_id:        '018'   
+    code_id_name:   勤務形態    
+    code:           4
+    name:           早退 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA76: 
+    id:             76  
+    code_id:        '018'   
+    code_id_name:   勤務形態    
+    code:           5
+    name:           代休 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA77: 
+    id:             77  
+    code_id:        '018'   
+    code_id_name:   勤務形態    
+    code:           6
+    name:           休暇
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA78: 
+    id:             78  
+    code_id:        '019'   
+    code_id_name:   勤務場所    
+    code:           1
+    name:           事務所 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA79: 
+    id:             79  
+    code_id:        '019'   
+    code_id_name:   勤務場所    
+    code:           2
+    name:           ユーザ先 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA80: 
+    id:             80  
+    code_id:        '019'   
+    code_id_name:   勤務場所    
+    code:           3
+    name:           出張 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA81: 
+    id:             81  
+    code_id:        '019'   
+    code_id_name:   勤務場所    
+    code:           4
+    name:           教育 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA82: 
+    id:             82  
+    code_id:        '020'   
+    code_id_name:   有休代休区分    
+    code:           1
+    name:           年休
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA83: 
+    id:             83  
+    code_id:        '020'   
+    code_id_name:   有休代休区分    
+    code:           2
+    name:           公休
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA84: 
+    id:             84  
+    code_id:        '020'   
+    code_id_name:   有休代休区分    
+    code:           3
+    name:           欠勤
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA85: 
+    id:             85  
+    code_id:        '021'   
+    code_id_name:   特別休暇区分    
+    code:           1
+    name:           結婚、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA86: 
+    id:             86  
+    code_id:        '021'   
+    code_id_name:   特別休暇区分    
+    code:           2
+    name:           忌引、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA87: 
+    id:             87  
+    code_id:        '021'   
+    code_id_name:   特別休暇区分    
+    code:           3
+    name:           病欠、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA88: 
+    id:             88  
+    code_id:        '021'   
+    code_id_name:   特別休暇区分    
+    code:           4
+    name:           他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA89: 
+    id:             89  
+    code_id:        '022'   
+    code_id_name:   願届区分    
+    code:           1
+    name:           願、
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA90: 
+    id:             90  
+    code_id:        '022'   
+    code_id_name:   願届区分    
+    code:           2
+    name:           届
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA91: 
+    id:             91  
+    code_id:        '023'   
+    code_id_name:   代休状態    
+    code:           0
+    name:           初期値 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA92: 
+    id:             92  
+    code_id:        '023'   
+    code_id_name:   代休状態    
+    code:           1
+    name:           振替済 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA93: 
+    id:             93  
+    code_id:        '023'   
+    code_id_name:   代休状態    
+    code:           2
+    name:           残業計上 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA94: 
+    id:             94  
+    code_id:        '023'   
+    code_id_name:   代休状態    
+    code:           3
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA95: 
+    id:             95  
+    code_id:        '024'   
+    code_id_name:   認証区分    
+    code:           0
+    name:           未承認 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA96: 
+    id:             96  
+    code_id:        '024'   
+    code_id_name:   認証区分    
+    code:           1
+    name:           承認
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA97: 
+    id:             97  
+    code_id:        '025'   
+    code_id_name:   ログ操作フラグ
+    code:           0
+    name:           参照 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA98: 
+    id:             98  
+    code_id:        '025'   
+    code_id_name:   ログ操作フラグ
+    code:           1
+    name:           更新 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA99: 
+    id:             99  
+    code_id:        '025'   
+    code_id_name:   ログ操作フラグ
+    code:           2
+    name:           削除 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA100: 
+    id:             100  
+    code_id:        '025'   
+    code_id_name:   ログ操作フラグ
+    code:           3
+    name:           追加
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA101: 
+    id:             101  
+    code_id:        '026'   
+    code_id_name:   ログエラーフラグ
+    code:           0
+    name:           正常 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA102: 
+    id:             102  
+    code_id:        '026'   
+    code_id_name:   ログエラーフラグ
+    code:           1
+    name:           異常
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA103: 
+    id:             103  
+    code_id:        '027'   
+    code_id_name:   重要度  
+    code:           1
+    name:           普通 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA104: 
+    id:             104  
+    code_id:        '027'   
+    code_id_name:   重要度  
+    code:           2
+    name:           重要
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA105: 
+    id:             105  
+    code_id:        '028'   
+    code_id_name:   申請区分
+    code:           1
+    name:           勤務表
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA106: 
+    id:             106  
+    code_id:        '028'   
+    code_id_name:   申請区分
+    code:           2
+    name:           有給申請
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA107: 
+    id:             107  
+    code_id:        '028'   
+    code_id_name:   申請区分
+    code:           3
+    name:           資格申請
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA108: 
+    id:             108  
+    code_id:        '028'   
+    code_id_name:   申請区分
+    code:           4
+    name:           代休申請
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA109: 
+    id:             109  
+    code_id:        '029'   
+    code_id_name:   承認結果    
+    code:           0
+    name:           初期値 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA110: 
+    id:             110  
+    code_id:        '029'   
+    code_id_name:   承認結果    
+    code:           1
+    name:           承認 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA111: 
+    id:             111  
+    code_id:        '029'   
+    code_id_name:   承認結果    
+    code:           2
+    name:           否決 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA112: 
+    id:             112  
+    code_id:        '029'   
+    code_id_name:   承認結果    
+    code:           3
+    name:           代理承認 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA113: 
+    id:             113  
+    code_id:        '029'   
+    code_id_name:   承認結果    
+    code:           4
+    name:           代理否決
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA114: 
+    id:             114  
+    code_id:        '030'   
+    code_id_name:   ジョブ実行状態
+    code:           0
+    name:           休止中 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA115: 
+    id:             115  
+    code_id:        '030'   
+    code_id_name:   ジョブ実行状態
+    code:           1
+    name:           実行中
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA116: 
+    id:             116  
+    code_id:        '031'   
+    code_id_name:   実行結果状態
+    code:           0
+    name:           初期値 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA117: 
+    id:             117  
+    code_id:        '031'   
+    code_id_name:   実行結果状態
+    code:           1
+    name:           正常終了 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA118: 
+    id:             118  
+    code_id:        '031'   
+    code_id_name:   実行結果状態
+    code:           9
+    name:           異常終了
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA119: 
+    id:             119  
+    code_id:        '032'   
+    code_id_name:   休職コード
+    code:           0
+    name:           現職 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA120: 
+    id:             120  
+    code_id:        '032'   
+    code_id_name:   休職コード
+    code:           1
+    name:           休職 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA121: 
+    id:             121  
+    code_id:        '032'   
+    code_id_name:   休職コード
+    code:           2
+    name:           退職
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA122: 
+    id:             122  
+    code_id:        '033'   
+    code_id_name:   総和会権限
+    code:           1
+    name:           システム管理者
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA123: 
+    id:             123  
+    code_id:        '033'   
+    code_id_name:   総和会権限
+    code:           2
+    name:           総和会代表者
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA124: 
+    id:             124  
+    code_id:        '033'   
+    code_id_name:   総和会権限
+    code:           3
+    name:           幹事
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA125: 
+    id:             125  
+    code_id:        '033'   
+    code_id_name:   総和会権限
+    code:           4
+    name:           幹事補佐
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA126: 
+    id:             126  
+    code_id:        '033'   
+    code_id_name:   総和会権限
+    code:           5
+    name:           事務
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA127: 
+    id:             127  
+    code_id:        '033'   
+    code_id_name:   総和会権限
+    code:           6
+    name:           一般社員
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA128: 
+    id:             128  
+    code_id:        '034'   
+    code_id_name:   予算精算フラグ  
+    code:           1
+    name:           予算 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA129: 
+    id:             129  
+    code_id:        '034'   
+    code_id_name:   予算精算フラグ  
+    code:           2
+    name:           精算
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA130: 
+    id:             130  
+    code_id:        '035'   
+    code_id_name:   出欠フラグ  
+    code:           0
+    name:           未定 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA131: 
+    id:             131  
+    code_id:        '035'   
+    code_id_name:   出欠フラグ  
+    code:           1
+    name:           出席 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA132: 
+    id:             132  
+    code_id:        '035'   
+    code_id_name:   出欠フラグ  
+    code:           2
+    name:           欠席
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA133: 
+    id:             133  
+    code_id:        '036'   
+    code_id_name:   確認フラグ  
+    code:           0
+    name:           未定 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA134: 
+    id:             134  
+    code_id:        '036'   
+    code_id_name:   確認フラグ  
+    code:           1
+    name:           承認 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA135: 
+    id:             135  
+    code_id:        '036'   
+    code_id_name:   確認フラグ  
+    code:           2
+    name:           否認
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA136: 
+    id:             136  
+    code_id:        '037'   
+    code_id_name:   案分フラグ  
+    code:           1
+    name:           会社 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA137: 
+    id:             137  
+    code_id:        '037'   
+    code_id_name:   案分フラグ  
+    code:           2
+    name:           総和会
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA138: 
+    id:             138  
+    code_id:        '038'   
+    code_id_name:   使用フラグ  
+    code:           0
+    name:           過去の金額 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA139: 
+    id:             139  
+    code_id:        '038'   
+    code_id_name:   使用フラグ  
+    code:           1
+    name:           現在の金額
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA140: 
+    id:             140  
+    code_id:        '039'   
+    code_id_name:   上下期  
+    code:           1
+    name:           上期 
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA141: 
+    id:             141  
+    code_id:        '039'   
+    code_id_name:   上下期  
+    code:           2
+    name:           下期
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA142: 
+    id:             142  
+    code_id:        '004'   
+    code_id_name:   役職
+    code:           9
+    name:           事務員
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+
+DATA143: 
+    id:             143  
+    code_id:        '040'   
+    code_id_name:   議事録区分
+    code:           1
+    name:           帰社報告
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA144: 
+    id:             144  
+    code_id:        '040'   
+    code_id_name:   議事録区分
+    code:           2
+    name:           研修
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA145: 
+    id:             145  
+    code_id:        '040'   
+    code_id_name:   議事録区分
+    code:           3
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+
+DATA146: 
+    id:             146  
+    code_id:        '041'   
+    code_id_name:   イベント区分
+    code:           1
+    name:           新人歓迎会
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA147: 
+    id:             147  
+    code_id:        '041'   
+    code_id_name:   イベント区分
+    code:           2
+    name:           春の飲み会
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA148: 
+    id:             148  
+    code_id:        '041'   
+    code_id_name:   イベント区分
+    code:           3
+    name:           夏合宿
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA149: 
+    id:             149  
+    code_id:        '041'   
+    code_id_name:   イベント区分
+    code:           4
+    name:           秋の飲み会
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA150: 
+    id:             150  
+    code_id:        '041'   
+    code_id_name:   イベント区分
+    code:           5
+    name:           冬合宿
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+DATA151: 
+    id:             151  
+    code_id:        '041'   
+    code_id_name:   イベント区分
+    code:           9
+    name:           その他
+    created_at:     2011/5/23 00:00:00
+    updated_at:     2011/5/23 00:00:00
+
+
+DATA161: 
+    id:             161  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           1
+    name:           永年勤続報奨金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA162: 
+    id:             162  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           2
+    name:           結婚祝金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA163: 
+    id:             163  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           3
+    name:           出産祝金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA164: 
+    id:             164  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           4
+    name:           入学祝金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA165: 
+    id:             165  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           5
+    name:           成人祝金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA166: 
+    id:             166  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           6
+    name:           還暦祝金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA167: 
+    id:             167  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           7
+    name:           古希祝金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA168: 
+    id:             168  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           8
+    name:           傷病見舞金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA169: 
+    id:             169  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           9
+    name:           障害見舞金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA170: 
+    id:             170  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           10
+    name:           災害見舞金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00
+DATA171: 
+    id:             171  
+    code_id:        '042'   
+    code_id_name:   慶弔金区分
+    code:           11
+    name:           死亡弔慰金
+    created_at:     2014/7/15 00:00:00
+    updated_at:     2014/7/15 00:00:00

@@ -1,0 +1,434 @@
+<!--
+/**
+ * タイトル: メニュー画面
+ * 説明    : メニューを表示します 
+ */
+-->
+<!-- スクリプト -->
+<%= content_for :head do %> 
+  <script language="Javascript">
+/*
+ * 終了ボタン
+ */
+  function end() {
+      var url = "<%= url_for :controller => "menu", :action => "menu0010" %>";
+      document.form1.action = url;
+      document.form1.submit();
+  }
+  </script>
+<% end %>
+<div id="cntl">
+
+<div style="top:5px;left:0px;position:absolute">
+<table border="0" width="800px">
+    <tr>
+        <td class="title">メニュー</td>
+    </tr>
+</table>
+  <P><INPUT class="GamenCD" disabled readonly value="MENU" id="GamenCD" name="GamenCD" tabindex="-1"></P>
+</div>
+
+<div style="top:35px;left:30px;position:absolute">
+
+<%= form_tag nil, :name => 'form1' do %>
+
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="font80"><b><font color="blue">社内管理</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'duties_users',:action=>'index') %>">勤務状況利用者</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'paidholi_applis',:action=>'index') %>">有給代休申請</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'allowances',:action=>'index') %>">社員資格手当</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'month_reports',:action=>'index') %>">帰社報告</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'trainings',:action=>'index') %>">講習会受講履歴</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'duties_indices',:action=>'index') %>">勤務状況INDEX</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'paidholis',:action=>'index') %>">有給代休残管理</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'certify_applis',:action=>'index') %>">資格申請</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'report_dates',:action=>'index') %>">帰社報告年月管理</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'careers',:action=>'index') %>">経歴</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'duties',:action=>'index') + '?mode=1' %> ">勤務状況</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'compensatories',:action=>'index') %>">代休明細</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'duties_insts',:action=>'index') %>">勤務報告初期設定</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'report_print',:action=>'index') %>">勤務報告印刷</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'duties_sums',:action=>'index') %>">勤務表</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="font70"><hr></td>
+      </tr>
+    </tbody>
+    </table>
+
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="font80"><b><font color="blue">総和会</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'cash_books',:action=>'index') %>">現金出納帳</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'events',:action=>'index') %>">イベント</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'event_models',:action=>'index') %>">イベント雛形</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'event_details',:action=>'index') %>">イベント詳細</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'members',:action=>'index') %>">会員マスタ</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'bank_books',:action=>'index') %>">銀行口座</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'event_budgets',:action=>'index') %>">イベント予算</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'input_moneys',:action=>'index') %>">イベント金額登録</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'event_classes',:action=>'index') %>">イベント分類マスタ</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'payment_months',:action=>'index') %>">月末入金</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'event_adjustments',:action=>'index') %>">イベント精算</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'attendaces',:action=>'index') %>">イベント出欠情報</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'usage_classes',:action=>'index') %>">使途分類</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="font70"><hr></td>
+      </tr>
+    </tbody>
+    </table>
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="font80"><b><font color="blue">会計システム</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'slpiinfos',:action=>'index') %>">伝票情報</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'balance_sheets',:action=>'index') %>">貸借対照表</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'account_sums',:action=>'index') %>">会計集計情報</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'crbiz_msts',:action=>'index') %>">会計業務マスタ</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'account_msts',:action=>'index') %>">勘定科目マスタ</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'sales',:action=>'index') %>">売上情報</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'statement_of_incomes',:action=>'index') %>">損益計算書</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'accounts',:action=>'index') %>">決算</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'crnotes_msts',:action=>'index') %>">会計摘要マスタ</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'capitals',:action=>'index') %>">資金繰り表</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="font70"><hr></td>
+      </tr>
+    </tbody>
+    </table>
+
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="font80"><b><font color="blue">マスタメンテ</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'name_msts',:action=>'index') %>">名称マスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'banks',:action=>'index') %>">金融機関マスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'holiday_msts',:action=>'index') %>">休日マスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'numbers',:action=>'index') %>">採番管理</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'jobactstats',:action=>'index') %>">ジョブ実行状態</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'messages',:action=>'index') %>">メッセージマスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'branches',:action=>'index') %>">支店マスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'clients',:action=>'index') %>">取引先マスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'logins',:action=>'index') %>">ログインマスタ</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'accesslogs',:action=>'index') %>">操作ログ</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'staffs',:action=>'index') %>">社員マスタ</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'certify_msts',:action=>'index') %>">資格マスタ</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'projects',:action=>'index') %>">プロジェクトマスタ</a>
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" class="font70"><hr></td>
+      </tr>
+    </tbody>
+    </table>
+
+    <table width="800px" align="center" border="0">
+    <colgroup>
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+      <col style="WIDTH: 20%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="font80"><b><font color="blue">その他</font></b></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+        <td class="font80"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'votings',:action=>'index') %>">投票</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'sec_card_msts',:action=>'index') %>">セキュリティカード</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'minutes',:action=>'index') %>">議事録</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'bbs',:action=>'index') %>">掲示板</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'pc_books',:action=>'index') %>">パソコン管理台帳</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'voting_users',:action=>'index') %>">投票者</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'sec_cards',:action=>'index') %>">セキュリティカード管理</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'minutes_attendaces',:action=>'index') %>">議事出欠者</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'bbs_mails',:action=>'index') %>">掲示板メール送付先</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'buy_applis',:action=>'index') %>">物品購入申請</a>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'voting_indices',:action=>'index') %>">投票索引</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'sec_card_hists',:action=>'index') %>">セキュリティカード履歴</a>
+        </td>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'consent_applis',:action=>'index') %>">承認依頼</a>
+        </td>
+        <td align="left">
+           <a href="<%= url_for(:controller=>'information',:action=>'index') %>">お知らせ</a>
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+           <a href="<%= url_for(:controller=>'voting_sums',:action=>'index') %>">投票結果</a>
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+<div style="top:610px;left:20px;position:absolute">
+<table border="0" width="800px">
+  <tr>
+    <td align="left">
+      <hr/>
+        <input style="WIDTH: 100px; HEIGHT: 25px" type="button" value="戻　る" name="End" onClick="end()">
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<% end %>
+
+</div>

@@ -1,0 +1,409 @@
+body.Body {  
+    background: #dfdfff;
+}
+
+/* 画面番号 */
+input.GamenCD {
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    background: #ffffff;
+    width: 200px;
+    height: 15px;
+    position: absolute; top:1%; left:85%;
+}
+
+/* 画面表題 */
+.title{
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e82c1;
+    text-align: left;
+    border-bottom: 3px solid #2e82c1;
+    border-left: 10px solid #2e82c1;
+    padding-left: 20px;
+}
+.title_purple{
+    font-size: 17px;
+    font-weight: bold;
+    color: #6495ED;
+    text-align: left;
+    border-bottom: 3px solid #6495ED;
+    border-left: 10px solid #6495ED;
+    padding-left: 20px;
+}
+.title_blue{
+    font-size: 17px;
+    font-weight: bold;
+    color: #0000FF;
+    text-align: left;
+    border-bottom: 3px solid #0000FF;
+    border-left: 10px solid #0000FF;
+    padding-left: 20px;
+}
+.title_red{
+    font-size: 17px;
+    font-weight: bold;
+    color: #990066;
+    text-align: left;
+    border-bottom: 3px solid #990066;
+    border-left: 10px solid #990066;
+    padding-left: 20px;
+}
+.title_green{
+    font-size: 17px;
+    font-weight: bold;
+    color: #669966;
+    text-align: left;
+    border-bottom: 3px solid #669966;
+    border-left: 10px solid #669966;
+    padding-left: 20px;
+}
+.title_black{
+    font-size: 17px;
+    font-weight: bold;
+    color: #696969;
+    text-align: left;
+    border-bottom: 3px solid #696969;
+    border-left: 10px solid #696969;
+    padding-left: 20px;
+}
+
+/* 中見出 */
+.mid_title {
+    color:     blue;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+/* 文字サイズ */
+.font95 {
+    font-size: 95%;
+}
+.font90 {
+    font-size: 90%;
+}
+.font80 {
+    font-size: 80%;
+}
+.font70 {
+    font-size: 70%;
+}
+
+/** テーブルタイトル */
+.tbl_title{
+    text-align: center;
+    color: #ffffff;
+    background-color: #2e82c1;  /*紺色*/
+}
+.tbl_title_red{
+    text-align: center;
+    color: #ffffff;
+    background-color: #990066;  /*赤色*/
+}
+.tbl_title_green{
+    text-align: center;
+    color: #ffffff;
+    background-color: #669966;  /*緑色*/
+}
+.tbl_title_black{
+    text-align: center;
+    color: #ffffff;
+    background-color: #696969;  /*黒色*/
+}
+.tbl_title_purple{
+    text-align: center;
+    color: #ffffff;
+    background-color: #6495ED;  /*紫色*/
+}
+.tbl_title_blue{
+    text-align: center;
+    color: #ffffff;
+    background-color: #0000FF;  /*青色*/
+}
+.tbl_title_orange{
+    text-align: center;
+    color: #ffffff;
+    background-color: orange;  /*オレンジ色*/
+}
+.tbl_title_yellow2{
+    text-align: center;
+    color: #ffffff;
+    background-color: darkorange;  /*黄色*/
+}
+.tbl_title_gold{
+    text-align: center;
+    color: #ffffff;
+    background-color: gold;  /*金色*/
+}
+.tbl_title2{
+    text-align: center;
+    color: #ffffff;
+    background-color: #808080;  /*灰色*/
+}
+.tbl_title3{
+    text-align: center;
+    color: #ffffff;
+    background-color: #A9A9A9;  /* うす灰色 */
+}
+
+.tbl_title_yellow{
+    text-align: center;
+    color: #ffffff;
+    background-color: #FFFFE0;
+}
+.tbl_title_blue{
+    text-align: center;
+    color: #ffffff;
+    background-color: #00BFFF;
+}
+.tbl_title_90{
+    font-size: 90%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2e82c1;  /*紺色*/
+}
+.tbl_title_80{
+    font-size: 80%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2e82c1;
+}
+.tbl_title_70{
+    font-size: 70%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2e82c1;
+}
+
+/** テーブルサブタイトル */
+.tbl_sub_title{
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+.tbl_sub_title_90{
+    font-size: 90%;
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+.tbl_sub_title_80{
+    font-size: 80%;
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+.tbl_sub_title_70{
+    font-size: 70%;
+    text-align: center;
+    color: #2e82c1;
+    background-color: #dfdfff;
+}
+
+/** テーブルデータ */
+.tbl_data{
+    background-color: #ffffff;
+}
+.tbl_data_money{
+    background-color: #ffffff;
+    font-size:medium;
+}
+.tbl_data_100{
+    font-size: 120%;
+    background-color: #ffffff;
+}
+.tbl_data_90{
+    font-size: 90%;
+    background-color: #ffffff;
+}
+.tbl_data_80{
+    font-size: 80%;
+    background-color: #ffffff;
+}
+.tbl_data_70{
+    font-size: 70%;
+    background-color: #ffffff;
+}
+
+/** テーブルデータ（黄色） */
+.tbl_data_yellow{
+    background-color: #FFFFE0;
+}
+.tbl_data_yellow_money{
+    background-color: #FFFFE0;
+    font-size:medium;
+}
+/** テーブルデータ（青色） */
+.tbl_data_blue{
+    background-color: #00BFFF;
+}
+/** テーブルデータ（灰色） */
+.tbl_data_gray{
+    background-color: #DCDCDC;
+}
+/** テーブルデータ（紫） */
+.tbl_data_purple{
+    background-color: #CCCCFF;
+}
+/** テーブルデータ（水色） */
+.tbl_data_skyblue{
+    background-color: #F0FFFF;
+}
+
+/** テーブル枠線 */
+.tbl_bgcolor{
+    background-color: #000000;
+}
+/** テーブル枠線 */
+.tbl_bgcolor_gray{
+    background-color: gray;
+}
+.tbl_bgcolor_95{
+    background-color: #000000;
+    font-size: 95%;
+}
+.tbl_bgcolor_90{
+    background-color: #000000;
+    font-size: 90%;
+}
+.tbl_bgcolor_85{
+    background-color: #000000;
+    font-size: 85%;
+}
+.tbl_bgcolor_80{
+    background-color: #000000;
+    font-size: 80%;
+}
+.tbl_bgcolor_70{
+    background-color: #000000;
+    font-size: 70%;
+}
+/** ページネート */
+div.pagination {
+   font-size: 90%;
+   text-align: left;
+   padding:    5px;
+}
+div.pagination a{
+   font-size: 90%;
+    background-color: #2e82c1;
+    /*background-color: #A9A9A9;*/ /*灰色 */
+    color: #ffffff;
+    padding: 5px;
+}
+div.pagination em{
+   font-size: 90%;
+    /*background-color: #ccc;*/
+    background-color: #F0FFFF;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px;
+}
+div.pagination span.disabled{
+   font-size: 90%;
+    /*background-color: #ccc;*/
+    background-color: #F0FFFF;
+    padding: 5px;
+}
+
+.search_button{
+  height: 30px;
+  width:  67px;
+}
+
+.test_button{
+    font-size: 12px;
+    /*font-weight: bold;*/
+    background-color: #FFFFE0;
+    /*color: blue;*/
+    /*color: #990066;*/
+    width:100px;
+    height:25px;
+    margin: 0px;
+/*
+    border-right: 1px;
+    border-top: 1px;
+    border-left: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: red;
+*/
+}
+
+.menu_button{
+    font-size: 12px;
+    /*background-color: #F0FFFF;*/
+    color: blue;
+    width:100px;
+    height:25px;
+    margin: 0px;
+}
+
+.update_button{
+    font-size: 12px;
+    /*background-color: #ffffff;*/
+    /*color: #990066;*/
+    color: #FF0000;
+    width:100px;
+    height:25px;
+    margin: 0px;
+}
+
+.sub_button{
+    font-size: 12px;
+    width:100px;
+    height:25px;
+    margin: 0px;
+}
+
+.button{
+    font-size: 12px;
+    width:70px;
+    height:25px;
+    margin: 0px;
+}
+
+.small_button{
+    font-size: 10px;
+    width:50px;
+    height:20px;
+    margin: 0px;
+    background-color: #FFFFE0;
+    color:blue;
+}
+
+.link{
+    /*font-size: 12px;*/
+    text-decoration:underline;
+    color:blue;
+    cursor:pointer;
+}
+.link_block{
+    /*text-decoration:underline;*/
+    cursor:pointer;
+    font-size: 90%;
+    background-color: #2e82c1;
+    color: #ffffff;
+    padding: 0px;
+}
+
+.fieldWithErrors{
+     color:red;
+     font-weight: bold;
+}
+
+.money{
+     ime-mode:disabled;
+     text-align:right;
+     font-size:100%;
+}
+
+.disp_money{
+     font-size:medium;
+}
+
+.check_red{
+    color:red;
+}

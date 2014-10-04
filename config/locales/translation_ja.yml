@@ -1,0 +1,63 @@
+ja:
+  activerecord:
+    models:
+      name_mst:          名称マスタ  
+      message:           メッセージマスタ  
+      member_mst:        会員マスタ  
+      gift_master:       慶弔給付マスタ  
+        
+    attributes:
+    
+      name_mst:
+        table_name:      名称マスタ
+        id:              ＩＤ
+        code_id:         コードＩＤ
+        code_id_name:    コードＩＤ名
+        code:            コード
+        name:            コード名称
+        created_at:      作成日時
+        updated_at:      更新日時
+    
+      message:
+        table_name:      メッセージマスタ  
+        id:              ＩＤ
+        msg_code:        メッセージコード
+        message:         メッセージ内容
+        upd_uid:         最終更新者
+        created_at:      作成日時
+        updated_at:      更新日時
+    
+      login:
+        id:              ＩＤ
+        user_id:         ログインid
+        password:        パスワード
+        staff_no:        社員番号
+        created_at:      作成日時
+        updated_at:      更新日時
+    
+      member_mst:
+        table_name:      会員一覧
+        id:              ＩＤ
+        menber_no:       会員番号
+        menber_name:     会員名
+        admission_date:  入会日
+        withdrawal_date: 退会日
+        birth_date:      生年月日
+        enter_date:      入社日
+        marry_date:      結婚記念日
+        memo:            備考
+        del_flg:         削除フラグ
+        created_at:      作成日時
+        updated_at:      更新日時
+
+      gift_master:
+        table_name:      慶弔給付金一覧
+        id:              ＩＤ
+        gift_div:        区分
+        condition:       給付条件
+        condition_year:  給付条件年
+        amount:          金額
+        year_flg:        給付条件フラグ
+        created_at:      作成日時
+        updated_at:      更新日時
+    

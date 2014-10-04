@@ -1,0 +1,87 @@
+<!-- スクリプト -->
+<%%= content_for :head do %> 
+  <script language="Javascript">
+  /*
+   * 終了ボタン
+   */
+  function btnEndClicked(){
+      $("#menu_form").attr("action","<%%= url_for :controller => 'menu', :action =>'menu0010' %>");
+      $("#menu_form").submit();
+  }
+  /*
+   * 戻るボタン
+   */
+  function btnBackClicked(){
+      $("#menu_form").attr("action","<%%= url_for :action =>'index' %>");
+      $("#menu_form").submit();
+  }
+  /*
+   * 編集作成ボタン
+   */
+  function btnEditClicked(){
+      $("#menu_form").attr("action","<%%= url_for :action =>'edit' %>" + "?id=" + <%%= @<%= singular_table_name %>.id %>);
+      $("#menu_form").submit();
+  }
+
+  /*
+   * 起動時の処理
+   */
+  function onLoad(){
+      /* エラーメッセージがあれば表示する  */
+      var msg = "<%%=  flash[:notice] %>";
+      if  (msg.length != 0){
+        alert(msg);
+        <%%=  flash[:notice] = ""%>
+      }
+    /* 最初のフォーカス */
+    //document.getElementById('syoninNo').focus();
+  }
+  </script>
+<%% end %>
+
+<!-- 表題 -->
+<div style="top:5px;left:0px;position:absolute">
+  <table border="0" width="970px">
+    <tr>
+        <td class="title"><%%= label :<%= singular_table_name %>, :table_name  %></td>
+    </tr>
+  </table>
+  <P><INPUT class="GamenCD" disabled readonly value="<%= plural_table_name %>" name="GamenCD" tabindex=-1 ></P>
+  <p id="notice"><%%= notice %></p>
+</div>
+
+<!-- 表見出し  -->
+<div style="top:70px; left:10px;position:absolute">
+  <table border=0 cellspacing=1 cellpadding=4 class="tbl_bgcolor">
+    <colgroup>
+      <col width="150px">
+      <col width="500px">
+    </colgroup>
+  <% attributes.each do |attribute| -%>
+    <tr>
+      <td class="tbl_title"><%%= label :<%= singular_table_name %>, :<%= attribute.name %> %></td>
+      <td class="tbl_data" ><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
+    </tr>
+  <% end -%>
+  </table>
+</div>
+
+<!-- ボタン領域 -->
+<div style="top:620px;left:10px;position:absolute">
+  <hr width="970px">
+<table border="0" width="970px">
+<tr>
+<td>
+</td>
+<td align=right>
+  <input type="button"  value="編　集へ"    onclick="btnEditClicked();"   class="sub_button">
+  <input type="button"  value="戻　る"      onclick="btnBackClicked();"   class="sub_button">
+  <input type="button"  value="メニューへ"  onclick="btnEndClicked();"    class="sub_button">
+</td>
+</tr>
+</table>
+</div>
+
+<!--メニュー遷移用 -->
+<%%= form_tag({:controller => 'menu', :action =>'menu0010'},{ :name=> :menu_form , :id=> :menu_form }) do %>
+<%% end %>

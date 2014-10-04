@@ -1,0 +1,25 @@
+require 'rails_helper'
+
+describe CmnUtils do
+
+  describe '営業日取得モジュール'
+=begin
+    before do
+      @test_instance = Class.new{include CmnUtils}.new
+    end
+=end
+    it 'メソッドが存在すること' do
+      #CmnUtils.instance_methods.include?(:get_business_date).should be_true
+      #expect(CmnUtils.instance_methods.include?(:get_business_date)).to be_true
+      expect(CmnUtils.respond_to?(:get_business_date)).to be true
+
+    end
+    context '引数が平日の場合' do
+      it 'そのままの日付が返却されること' do
+        test_date   = Date.new(2017, 7, 17)
+        #return_date = @test_instance.get_business_date(test_date)
+        return_date = CmnUtils.get_business_date(test_date)
+        expect(return_date).to eq test_date
+      end
+  end
+end

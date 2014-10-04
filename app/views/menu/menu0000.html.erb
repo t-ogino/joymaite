@@ -1,0 +1,99 @@
+<!--
+/**
+ * タイトル: ログイン画面
+ * 説明    : ログイン画面を表示します
+ */
+-->
+<!-- スクリプト -->
+<%= content_for :head do %> 
+  <script type="text/javascript">
+  var sub_window_id = 0;
+  /*
+   * ログイン処理
+   */
+  function btnLoginClicked() {
+      if (sub_window_id == 0) {
+          dd = new Date();
+          sub_window_id = dd.getTime();
+      }
+      var style     = "resizable=no,directories=no,location=no,menubar=no,status=no,toolbar=no,scrollbars=yes";
+      style         = style + ",width=1024,height=700,top=0,left=0";
+      var name      = "menu_window" + sub_window_id;
+      var url       = "/blank.html";
+      var win_focus = window.open(url, name, style);
+      var form      = document.getElementById('new_user_session');
+      var login     = document.getElementById('user_session_login').value;
+      var password  = document.getElementById('user_session_password').value;
+  
+      form.action   = "/menu/menu0001?login=" + login  + "&password=" + password;
+      form.method   = "post";
+      form.target   =  name;
+      form.submit();
+      //パスワードクリア
+      document.getElementById('user_session_password').value = "";
+  }
+  /*
+   * クリア処理
+   */
+  function btnClearClicked() {
+      document.getElementById('user_session_login').value = "";
+      document.getElementById('user_session_password').value = "";
+  }
+  /*
+   * 起動時の処理
+   */
+  function onLoad(){
+      /* 最初のフォーカス */
+      document.getElementById('user_session_login').focus();
+  }
+  </script>
+<% end %>
+
+<br>
+<br>
+<div style="top:5px;left:0px;position:absolute">
+<table border="0" width="970px">
+    <tr>
+        <td class="title">ログイン</td>
+    </tr>
+</table>
+</div>
+
+<div style="top:110px;left:5px;position:absolute">
+
+<%= form_for @user_sessions, :url=>{:action => 'create'} do |f| %>
+<table width="970px">
+<tr>
+  <td align="center">
+
+<table>
+   <tr>
+       <td>ユーザ名</td>
+       <td><%= f.text_field :login , {:size => "20" ,:maxlength=>"20",:style => "ime-mode:disabled; width:150px;"} %></td>
+   </tr>
+   <tr>
+       <td>パスワード</td>
+       <td><%= f.password_field :password , {:size => "20" ,:maxlength=>"20",:style => "ime-mode:disabled; width:150px;"}  %></td>
+   </tr>
+</table>
+  </td>
+</tr>
+</table>
+<% end %>
+
+</div>
+
+<div style="top:200px;left:5px;position:absolute">
+<table width="970px">
+<tr>
+  <td align="center">　　　　　
+    <input style="WIDTH:72px; HEIGHT:22px" type="button" value="ログイン" onclick="btnLoginClicked()" name="btnLogin">　
+    <input style="WIDTH:72px; HEIGHT:22px" type="button" value="クリア"   onclick="btnClearClicked()">　
+    <input style="WIDTH:76px; HEIGHT:22px" type="button" value="終了"     onclick="window.close()">
+  </td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>

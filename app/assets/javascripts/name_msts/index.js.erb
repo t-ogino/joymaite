@@ -1,0 +1,26 @@
+$(document).ready(function(){
+  Start();
+  $("#data_list tr[data-row-id] ").click(function () {
+     //alert("クリックされました");
+     $(".tbl_title").css("background-color","#2e82c1");
+     $(".tbl_title").css("color","#ffffff");
+  });
+});
+
+
+function Start() {
+  //$("#data_list").css("color","Red");
+  //$(".tbl_title").css("background-color","Red");
+  //$(".tbl_title").css("color","Yellow");
+}
+
+function OnClickDispensing(med_ids) {
+  $("#med_ids").remove();
+
+  var hidden_field_tag = $("<input type='hidden' id='med_ids' name='med_ids' />");
+  $("#dispensing_charts_form").append(hidden_field_tag);
+  $('#med_ids').val(med_ids);
+  $('#dispensing_charts_form').submit();
+
+
+}

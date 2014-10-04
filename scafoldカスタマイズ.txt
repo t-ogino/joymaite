@@ -1,0 +1,74 @@
+１）Scaffoldを日本語化する「i18n_generators」を導入
+（「i18n_generators」：モデル名や各項目名を自動で翻訳）
+２）Scaffoldの、元テンプレート＆コントローラを修正
+３）③普通にScaffoldを使ってモデル生成＆マイグレート
+４）最後に、i18n_generatorsを使って日本語化して完了
+
+------------------------------------------------------------------------------
+１）i18n_generatorsを導入
+------------------------------------------------------------------------------
+①gem install i18n_generators
+②ファイル(config/application.rb)を、以下のように修正
+変更前    # config.i18n.default_locale = :de
+変更後    config.i18n.default_locale = :ja
+③日本語のリソースファイルを配置
+取得先：https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml
+配置場所：config/locales/ja.yml
+
+------------------------------------------------------------------------------
+２）Scaffoldのテンプレート＆コントローラを修正
+------------------------------------------------------------------------------
+①rake rails:templates:copy
+②テンプレート修正
+lib/templates/erb/scaffold/index.html.erb
+修正前
+<% attributes.each do |attribute| -%>
+  <th><%= attribute.human_name %></th>
+<% end -%>
+修正後
+<% attributes.each do |attribute| -%>
+  <th><%%= label :<%= singular_table_name %>, :<%= attribute.name %> %></th>
+<% end -%>
+
+実際のコード例（Memberモデルのnameの場合）
+  <th><%= label :member, :name %></th>
+
+lib/templates/erb/scaffold/show.html.erb
+修正前
+<b><%= attribute.human_name %>:</b>
+修正後
+<b><%%= label :<%= singular_table_name %>, :<%= attribute.name %> %>:</b>
+
+実際のコード例（Memberモデルのnameの場合）
+<b><%= label :member, :name %>:</b>
+
+③コントローラの修正
+lib/templates/rails/scaffold_controller/controller.rb のindexメソッドに以下を追加
+
+ def index
+   @<%= singular_table_name %> = <%= orm_class.build(class_name) %>
+
+実際のコード例（Memberモデルのnameの場合）
+ def index
+   @members = Member.new
+
+lib/templates/erb/scaffold 以下の各テンプレートで、日本語にしたい箇所を修正
+
+------------------------------------------------------------------------------
+３）Scaffold実行
+------------------------------------------------------------------------------
+①普通にScaffoldを使ってモデル生成・マイグレート
+
+------------------------------------------------------------------------------
+４）日本語辞書生成
+------------------------------------------------------------------------------
+①i18n_generatorsを使って日本語化して完了
+日本語化は、以下のコマンドを打つだけ。
+rails g i18n ja
+ただ、ネットに繋がってないと、「翻訳」は動かないので、注意
+自動翻訳されたモデル用の日本語辞書が[config/locales/translation_ja.yml]に
+生成されるので、修正
+
+
+
+rails destroy scaffold 取り消したいScaffold名
